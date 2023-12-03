@@ -1,0 +1,13 @@
+body {
+    overflow: scroll;
+    background-color: white;
+    margin: 3em 10em 1em 10em;
+    text-align: center;
+    font-family: "lato", sans-serif;
+}
+
+.container {
+    margin: 1em 13em 1em 13em;
+    text-align: left;
+    font-size: 1.1em;
+}
