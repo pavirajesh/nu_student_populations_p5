@@ -19,7 +19,7 @@ nav {
 }
 
 .content-lead-image {
-    background-image: url(headline-photo.jpeg);
+    background-image: url(images/headline-photo.jpeg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
