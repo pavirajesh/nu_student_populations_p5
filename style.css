@@ -1,18 +1,55 @@
 body {
     overflow: scroll;
+    margin: auto;
     background-color: black;
-    margin: 3em 10em 1em 10em;
     text-align: center;
-    font-family: "lato", sans-serif;
     color: white;
 }
 
+nav {
+    background-image: url(https://brand.northeastern.edu/wp-content/uploads/2022/06/ac-grid-2-white.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 37px;
+    background-color: black;
+    position: relative;
+    height: 55px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.content-lead-image {
+    background-image: url(headline-photo.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 800px;
+}
+.content-lead-image .headlines {
+    margin: auto;
+    position: relative;
+    padding-top: 200px;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    color: white;
+}
+.content-lead-image .headlines h1 {
+    font-size: 5em;
+    line-height: 100px;
+    display: inline-block;
+    background-color: #E50000;
+    opacity: 90%;
+    padding: 20px;
+}
+
 .container {
-    margin: 1em 3em 1em 3em;
+    margin: 5em 10.5em 1em 10.5em;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-gap: 30px;
     text-align: left;
+    font-family: "lato", sans-serif;
     font-size: 1.1em;
 }
 
