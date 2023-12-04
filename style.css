@@ -1,13 +1,17 @@
 body {
     overflow: scroll;
-    background-color: white;
+    background-color: black;
     margin: 3em 10em 1em 10em;
     text-align: center;
     font-family: "lato", sans-serif;
+    color: white;
 }
 
 .container {
-    margin: 1em 13em 1em 13em;
+    margin: 1em 3em 1em 3em;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 30px;
     text-align: left;
     font-size: 1.1em;
 }

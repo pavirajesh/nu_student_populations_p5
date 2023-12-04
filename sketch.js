@@ -5,7 +5,6 @@ function setup() {
     createCanvas(1150, 1550);
     textFont('lato');
     textStyle(BOLD);
-    
 }
 
 function preload() {
@@ -15,10 +14,10 @@ function preload() {
   }
 }
 
-function drawSquare(x, y, size, textValue, dataValue, textSizeValue, strokeColor) {
+function drawSquare(x, y, size, radius, textValue, dataValue, textSizeValue, strokeColor) {
   stroke(strokeColor);
   strokeWeight(10);
-  square(x, y, size);
+  square(x, y, size, radius);
   textAlign(CENTER, CENTER);
   textSize(textSizeValue);
   noStroke();
@@ -31,11 +30,11 @@ function drawSquare(x, y, size, textValue, dataValue, textSizeValue, strokeColor
     mouseY < y + size &&
     mouseIsPressed
   ) {
-    revealValueSquare(x, y, size, dataValue, textSizeValue);
+    revealValueSquare(x, y, size, radius, dataValue, textSizeValue);
   }
 }
 
-function revealValueSquare(x, y, size, value, textSizeValue) {
+function revealValueSquare(x, y, size, radius, value, textSizeValue) {
   textAlign(CENTER, BOTTOM);
   textSize(textSizeValue);
   text(value, x + size / 2, y + size / 3);
@@ -70,7 +69,7 @@ function revealValueRect(x, y, width, height, value, textSizeValue) {
 }
 
 function draw() {
-  background(150);
+  background(0);
   let num_year = 0;
   let x_square_val = 30;
   let x_rect_val = 30;
@@ -78,7 +77,7 @@ function draw() {
   for (let table of tables) {
 
     let total_pop = table.getString(table.getRowCount() - 1, 1) + " Students";
-    drawSquare(x_square_val, 20, 200, years[num_year], total_pop, 20, 'red');
+    drawSquare(x_square_val, 20, 200, 30, years[num_year], total_pop, 20, 'red');
 
     x_square_val = x_square_val + 220;
     let y = 750;
