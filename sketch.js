@@ -15,13 +15,13 @@ function preload() {
 }
 
 function drawSquare(x, y, size, radius, textValue, dataValue, textSizeValue, strokeColor) {
-  stroke(strokeColor);
-  strokeWeight(10);
-  square(x, y, size, radius);
-  textAlign(CENTER, CENTER);
-  textSize(textSizeValue);
-  noStroke();
-  text(textValue, x + size / 2, y + size / 2);
+    stroke(strokeColor);
+    strokeWeight(10);
+    square(x, y, size, radius);
+    textAlign(CENTER, CENTER);
+    textSize(textSizeValue);
+    noStroke();
+    text(textValue, x + size / 2, y + size / 2);
 
   if (
     mouseX > x &&
