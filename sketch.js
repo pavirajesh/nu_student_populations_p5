@@ -9,7 +9,7 @@ function setup() {
 
 function preload() {
   for (let year of years) {
-    let table = loadTable('NU_Data' + year + '.csv', 'csv', 'header');
+    let table = loadTable('datasets/NU_Data' + year + '.csv', 'csv', 'header');
     tables.push(table);
   }
 }
